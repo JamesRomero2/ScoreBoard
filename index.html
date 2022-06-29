@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@400;700&display=swap" rel="stylesheet">
+    <title>Score Counter</title>
+</head>
+<body>
+    <main class="container">
+        <section class="left-side">
+            <h1>HOME</h1>
+            <div class="left-side_upper score_screen" id="homeScreen">
+                0
+            </div>
+            <div class="left-side_lower button_group">
+                <button onclick="incrementHomeScore(1)">+1</button>
+                <button onclick="incrementHomeScore(2)">+2</button>
+                <button onclick="incrementHomeScore(3)">+3</button>
+            </div>
+            <div class="winnerSign" id="homeWin"></div>
+        </section>
+        <section class="right-side">
+            <h1>GUEST</h1>
+            <div class="right-side_upper score_screen" id="guestScreen">
+                0
+            </div>
+            <div class="right-side_upper button_group">
+                <button onclick="incrementGuestScore(1)">+1</button>
+                <button onclick="incrementGuestScore(2)">+2</button>
+                <button onclick="incrementGuestScore(3)">+3</button>
+            </div>
+            <div class="winnerSign" id="guestWin"></div>
+        </section>
+    </main>
+    <button class="result" onclick="winner()">Match End</button>
+    <script src="script.js"></script>
+</body>
+</html>

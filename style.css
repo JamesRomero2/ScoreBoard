@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*,*::before,*::after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    font-family: 'Stick No Bills', sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+main {
+    width: 800px;
+    height: 300px;
+    background-color: rgb(0, 30, 56);
+    border: 5px solid white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 50px;
+}
+h1 {
+    color: #fff;
+    font-size: 48px;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 100%;
+    gap: 10px;
+}
+.score_screen {
+    width: 200px;
+    height: 100px;
+    background-color: black;
+    border-radius: 10px;
+    color: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 72px;
+    font-weight: 700;
+}
+.button_group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+.button_group button {
+    border: 3px solid rgb(77, 149, 212);
+    color: rgb(77, 149, 212);
+    font-family: 'Stick No Bills', sans-serif;
+    font-size: 18px;
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(0, 30, 56);
+    cursor: pointer;
+}
+.result {
+    position: absolute;
+    bottom: 90px;
+    width: 250px;
+    height: 50px;
+    border: 5px solid white;
+    border-radius: 10px;
+    background-color: rgb(0, 30, 56);
+    font-family: 'Stick No Bills', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color:chartreuse ;
+    cursor: pointer;
+}
+.winnerSign {
+    font-size: 64px;
+    font-weight: 700;
+    color: greenyellow;
+    display: none;
+}
